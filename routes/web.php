@@ -53,13 +53,9 @@ Route::get('/', function () {
 // Route::get('/user', [ManagementUserController::class, 'index']);
 Route::resource('/user', ManagementUserController::class);
 
-Route::get('/session/create','SessionController@create');
-Route::get('/session/show','SessionController@show');
-Route::get('/session/delete','SessionController@delete');
-
-Route::get('/home', function(){
-    return view("home");
-});
+// Route::get('/home', function(){
+//     return view("home");
+// });
 
 Route::group(['namespace' => 'Frontend'], function(){
     Route::resource('/home', HomeController::class);
@@ -77,3 +73,7 @@ Route::group(['namespace' => 'Backend'], function(){
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -193,16 +193,7 @@
                                         <button class="btn btn-secondary" type="button">Cancel</button>
                                     </a>
                                 </div>
-                            </form>
-                            <!-- Vertical Form -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-@endsection -->
+                           
 
 
 
